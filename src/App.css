@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  height: 200vh; /* 縦方向に長くしてスクロール可能にする */
+  position: relative;
+}
+
+.animated-box {
+  position: absolute;
+  width: 200%; /* 横に広がるエリア */
+  height: 100%;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.spacer {
+  height: 100vh; /* 余白を作るため */
+}
